@@ -28,7 +28,7 @@ def read_delta(
     tensor_column_schema: Optional[Dict[str, Tuple[np.dtype, Tuple[int, ...]]]] = None,
     meta_provider=DefaultParquetMetadataProvider(),
     **arrow_parquet_args,
-) -> Dataset[ArrowRow]:
+):
     """Create an Arrow dataset from a Delta Table using Ray
 
     Examples:
